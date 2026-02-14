@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zogiraa Demo</title>
+</head>
+<body>
+  <h1>Welcome to Zogiraa</h1>
+
+  <button onclick="login('user')">Login as User</button>
+  <button onclick="login('employer')">Login as Employer</button>
+
+  <script>
+    function login(role) {
+      if (role === "user") {
+        window.location.href = "/user.html";
+      } else {
+        window.location.href = "/employer.html";
+      }
+    }
+  </script>
+</body>
+</html>
